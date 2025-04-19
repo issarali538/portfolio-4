@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-3</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="font-montserrat bg-neutral-900 text-white">
+    <!-- hero -->
+    <header
+      id="home"
+      class="h-[50vh] flex justify-center items-center relative overflow-hidden lg:h-screen"
+    >
+      <!-- navigation  -->
+      <nav
+        class="fixed top-0 left-1/2 -translate-x-1/2 container py-4 px-5 rounded-sm z-15 lg:hidden"
+        id="first-navigation"
+      >
+        <ul class="flex justify-end">
+          <li class="gap-x-1 hidden md:flex flex-1 text-left">
+            <a href="maito:sahibzadaissarali@gmail.com"
+              >sahibzadaissarali@gmail.com</a
+            >
+            <span
+              class="text-amber-500"
+              href="maito:sahibzadaissarali@gmail.com"
+            >
+              <svg
+                aria-colspan="w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+            <a href="phoneto:+923085724732">+92-308-57-24-732</a>
+          </li>
+          <li class="text-right">
+            <button class="text-amber-500 cursor-pointer" id="toggle-menu-btn">
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75H12a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- decoration circle  (abasoluted)-->
+      <div
+        class="absolute hidden w-[500px] h-[500px] rounded-full bg-gradient-to-br from-white/10 -bottom-70 left-1/7 -translate-x-1/2 md:block lg:w-[700px] lg:h-[700px]"
+      ></div>
+      <div class="flex flex-col-reverse items-center md:flex-row gap-x-7">
+        <!-- intro  -->
+        <div class="text-center">
+          <h1 class="capitalize pt-4 text-shadow-lg/20 text-2xl lg:text-4xl">
+            It's <span class="text-amber-400">Sahibzada Issar Ali</span>
+          </h1>
+          <h2 class="relative lg:text-2xl">
+            <!-- line  -->
+            <div
+              class="bg-amber-300 h-0.5 absolute -bottom-2 left-10 w-40"
+            ></div>
+            A Web Developer & Designer
+          </h2>
+          <div class="pt-7 text-center md:text-right">
+            <a
+              href="mailto:sahibzadaissarali@gmail.com"
+              class="py-2 px-5 bg-amber-500 text-neutral-900 rounded-sm border border-amber-500 hover:bg-transparent transition-all hover:text-neutral-400"
+              >Email Me</a
+            >
+          </div>
+        </div>
+        <!-- dp  -->
+        <div class="">
+          <div
+            class="w-[150px] h-[150px] rounded-full overflow-hidden bg-gradient-to-tr from-amber-300 to-neutral-900 relative shadow-xl shadow-white/40 lg:w-[220px] lg:h-[220px] lg:shadow-none"
+          >
+            <img
+              src="assets/images/profile.jpg"
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[140px] object-cover h-[140px] lg:w-[200px] lg:h-[200px]"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- nav  -->
+      <nav
+        class="absolute hidden bottom-2 left-1/2 -translate-x-1/2 w-full lg:block"
+      >
+        <ul
+          class="flex flex-row text-amber-500 text-center w-full justify-center"
+        >
+          <li>
+            <a
+              class="py-3 px-4 hover:bg-white/30 transition-colors rounded-sm"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="py-3 px-4 hover:bg-white/30 transition-colors rounded-sm"
+              href="#skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="py-3 px-4 hover:bg-white/30 transition-colors rounded-sm"
+              href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="py-3 px-4 hover:bg-white/30 transition-colors rounded-sm"
+              href="#education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              class="py-3 px-4 hover:bg-white/30 transition-colors rounded-sm"
+              href="#hobbies"
+              >Hobbies</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile menue -->
+      <nav
+        class="fixed top-0 left-0 w-[95%] -translate-x-[10000px] h-screen z-16 bg-gradient-to-b from-neutral-700 to-amber-500 rounded-br-sm transition-all"
+        id="mobile-menu"
+      >
+        <ul class="h-full">
+          <li class="text-right pr-4">
+            <button class="text-amber-500 cursor-pointer" id="cancel">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#intro"
+              >Intro</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-4 py-2.5 block w-full hover:bg-neutral-800 transition-all"
+              href="#hobbies"
+              >Hobbies</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- inro -->
+    <section
+      id="intro"
+      class="pt-20 px-10 flex flex-row md:gap-x-3 relative md:px-30 md:pt-40"
+    >
+      <!-- sunflow  (absolutey)-->
+      <div class="hidden absolute bottom-2 righ-1/6 opacity-50 md:block">
+        <img
+          src="assets/images/sun-flower.png"
+          class="w-[500px] h-[500px]"
+          alt=""
+        />
+      </div>
+      <div class="w-full md:self-center lg:self-start lg:pt-5">
+        <p
+          class="relative pt-20 text-justify pb-5 px-5 md:px-6 md:shadow-2xl md:shadow-white/20 md:-mr-10 md:z-10 md:bg-neutral-800 md:rounded-sm lg:py-15"
+        >
+          <span
+            class="absolute top-0 left-0 text-8xl font-dancing text-amber-500 md:top-6 md:left-6 md:text-7xl lg:top-4"
+            >Hi,</span
+          >
+          <span class="pl-25 lg:pl-20"></span>
+          My name is Sahibzad Issar Ali. I am a
+          <span class="italic">professional</span> web developer. I have
+          previous <span class="italic">2-years</span> experience. I have
+          previous experience working as a team player.
+        </p>
+      </div>
+      <div
+        class="hidden text-right overflow-hidden rounded-sm md:flex md:justify-end"
+      >
+        <img
+          class="md:h-[550px] md:w-[550px] w-full object-cover"
+          src="assets/images/intro-image.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- skill set  -->
+    <section
+      id="skills"
+      class="pt-20 px-10 md:px-30 md:pt-40 relative overflow-hidden"
+    >
+      <!-- decoration circle  (abasoluted)-->
+      <div
+        class="absolute hidden w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-amber-500 to-neutral-900 -bottom-50 -right-1/2 -translate-x-1/3 md:block lg:w-[700px] lg:h-[700px]"
+      ></div>
+
+      <!-- section title  -->
+      <h1 class="text-center text-4xl relative">
+        <!-- line (abolutely) -->
+        <span class="absolute -bottom-4 left-1/2 h-1 bg-amber-500 w-50"></span>
+        I am professionl in
+      </h1>
+
+      <!-- skill cards -->
+      <div class="pt-15 flex flex-col flex-wrap md:flex-row">
+        <!-- card ui  -->
+        <div class="p-3 md:max-w-6/12 lg:max-w-4/12">
+          <div
+            class="overflow-hidden flex flex-col gap-y-3.5 p-5 bg-neutral-800 rounded-sm relative min-h-full hover:drop-shadow-sm hover:drop-shadow-amber-500 transition-all"
+          >
+            <!-- center (absolutely) -->
+            <div
+              class="absolute opacity-50 border border-amber-500 -top-7/12 -right-8/12 -translate-x-1/2 rounded-full w-[200px] h-[200px] -z-0"
+            ></div>
+            <h3 class="text-2xl font-semibold font-jetbrain text-amber-500">
+              UI
+            </h3>
+            <p class="text-sm">
+              I have expertise in Front End Design. I have previous epxerience
+              working as front end designer. I can convert any PSD or Figma file
+              in to an elegant and eye cache design.
+            </p>
+          </div>
+        </div>
+        <!-- skill reactjs  -->
+        <div class="p-3 md:max-w-6/12 lg:max-w-4/12">
+          <div
+            class="overflow-hidden flex flex-col gap-y-3.5 p-5 bg-neutral-800 rounded-sm relative min-h-full hover:drop-shadow-sm hover:drop-shadow-amber-500 transition-all"
+          >
+            <!-- center (absolutely) -->
+            <div
+              class="absolute opacity-50 border border-amber-500 -top-7/12 -right-8/12 -translate-x-1/2 rounded-full w-[200px] h-[200px] -z-0"
+            ></div>
+            <h3 class="text-2xl font-semibold font-jetbrain text-amber-500">
+              ReactJs
+            </h3>
+            <p class="text-sm">
+              While working as web designer. Since web designing is nothing
+              without reactjs. So I have professional experience while working
+              as a reactjs front end developer.
+            </p>
+          </div>
+        </div>
+        <!-- skill php  -->
+        <div class="p-3 md:max-w-6/12 lg:max-w-4/12">
+          <div
+            class="overflow-hidden flex flex-col gap-y-3.5 p-5 bg-neutral-800 rounded-sm relative min-h-full hover:drop-shadow-sm hover:drop-shadow-amber-500 transition-all"
+          >
+            <!-- center (absolutely) -->
+            <div
+              class="absolute opacity-50 border border-amber-500 -top-7/12 -right-8/12 -translate-x-1/2 rounded-full w-[200px] h-[200px] -z-0"
+            ></div>
+            <h3 class="text-2xl font-semibold font-jetbrain text-amber-500">
+              PHP
+            </h3>
+            <p class="text-sm">
+              As as full stack developer. I have professional experience in
+              backend language PHP. I have good exper while working as a backend
+              developer.
+            </p>
+          </div>
+        </div>
+        <!-- card Mysql  -->
+        <div class="p-3 md:max-w-6/12 lg:max-w-4/12">
+          <div
+            class="overflow-hidden flex flex-col gap-y-3.5 p-5 bg-neutral-800 rounded-sm relative min-h-full hover:drop-shadow-sm hover:drop-shadow-amber-500 transition-all"
+          >
+            <!-- center (absolutely) -->
+            <div
+              class="absolute opacity-50 border border-amber-500 -top-7/12 -right-8/12 -translate-x-1/2 rounded-full w-[200px] h-[200px] -z-0"
+            ></div>
+            <h3 class="text-2xl font-semibold font-jetbrain text-amber-500">
+              Mysql
+            </h3>
+            <p class="text-sm">
+              Mysql is very often used with php. I have a professional
+              epxerience in mysql. I am professional sql language to write
+              efficient query so it take less time for execution.
+            </p>
+          </div>
+        </div>
+        <!-- card laravel  -->
+        <div class="p-3 md:max-w-6/12 lg:max-w-4/12">
+          <div
+            class="overflow-hidden flex flex-col gap-y-3.5 p-5 bg-neutral-800 rounded-sm relative min-h-full hover:drop-shadow-sm hover:drop-shadow-amber-500 transition-all"
+          >
+            <!-- center (absolutely) -->
+            <div
+              class="absolute opacity-50 border border-amber-500 -top-7/12 -right-8/12 -translate-x-1/2 rounded-full w-[200px] h-[200px] -z-0"
+            ></div>
+            <h3 class="text-2xl font-semibold font-jetbrain text-amber-500">
+              Laravel
+            </h3>
+            <p class="text-sm">
+              Laravel is the most used and most famous php framework. I am
+              expert in laravel framework. I have professional epxerience by
+              making large portal and panel using laravel framework.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects  -->
+    <section
+      id="projects"
+      class="pt-20 px-10 md:px-30 md:pt-40 relative overflow-hidden"
+    >
+      <!-- section title  -->
+      <h1 class="text-center text-4xl relative">
+        <!-- line (abolutely) -->
+        <span class="absolute -bottom-4 left-1/2 h-1 bg-amber-500 w-50"></span>
+        The projects i have done yet
+      </h1>
+      <!-- projects cards  -->
+      <div class="flex flex-wrap">
+        <div class="max-w-full p-3 md:max-w-6/12">
+          <!-- card tax2uk -->
+          <div
+            class="bg-neutral-900 py-7 mt-9 rounded-sm flex border border-neutral-700 relative overflow-hidden group px-2 min-h-auto md:min-[210px]"
+          >
+            <!-- docoration hoverable circle  -->
+            <div
+              class="absolute -bottom-[100px] -left-[100%] w-40 h-40 bg-gradient-to-tr from-white/20 rounded-full group-hover:-bottom-1/2 group-hover:-left-1/8 transition-all"
+            ></div>
+
+            <!-- card logo -->
+            <div class="w-20">
+              <img
+                class="w-8 h-8 mx-auto rounded-full object-cover"
+                src="assets/images/tax2uk-logo.png"
+                alt=""
+              />
+            </div>
+            <!-- card desc -->
+            <div class="p-1">
+              <h2 class="text-xl font-semibold">Tax2uk</h2>
+              <p class="pt-3 text-justify">
+                In this project we verify the tax paid by the citizen of
+                england. They upload paid bill and our system verifying it.
+              </p>
+              <div class="text-right pt-3">
+                <a
+                  href="https://www.tax2u.co.uk/"
+                  target="_blank"
+                  class="border border-amber-500 py-1 px-2 rounded-sm transition-all hover:bg-amber-500 hover:text-neutral-900"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-full p-3 md:max-w-6/12">
+          <!-- card dynamowebs -->
+          <div
+            class="bg-neutral-900 py-7 mt-9 rounded-sm flex border border-neutral-700 relative overflow-hidden group px-2 min-h-auto md:min-[210px]"
+          >
+            <!-- docoration hoverable circle  -->
+            <div
+              class="absolute -bottom-[100px] -left-[100%] w-40 h-40 bg-gradient-to-tr from-white/20 rounded-full group-hover:-bottom-1/2 group-hover:-left-1/8 transition-all"
+            ></div>
+
+            <!-- card logo -->
+            <div class="w-20">
+              <img
+                class="w-8 h-8 mx-auto rounded-full object-cover"
+                src="assets/images/dynamoweb-logo.png"
+                alt=""
+              />
+            </div>
+            <!-- card desc -->
+            <div class="p-1">
+              <h2 class="text-xl font-semibold">Dynamowebs</h2>
+              <p class="pt-3 text-justify">
+                I work on that project front end. This was pre-built theme and i
+                designed most parts of it.
+              </p>
+              <div class="text-right pt-3">
+                <a
+                  href="https://www.dynamowebs.com/index"
+                  target="_blank"
+                  class="border border-amber-500 py-1 px-2 rounded-sm transition-all hover:bg-amber-500 hover:text-neutral-900"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-full p-3 md:max-w-6/12">
+          <!-- card hotcrm -->
+          <div
+            class="bg-neutral-900 py-7 mt-9 rounded-sm flex border border-neutral-700 relative overflow-hidden group px-2 min-h-auto md:min-[210px]"
+          >
+            <!-- docoration hoverable circle  -->
+            <div
+              class="absolute -bottom-[100px] -left-[100%] w-40 h-40 bg-gradient-to-tr from-white/20 rounded-full group-hover:-bottom-1/2 group-hover:-left-1/8 transition-all"
+            ></div>
+
+            <!-- card logo -->
+            <div class="w-20">
+              <img
+                class="w-8 h-8 mx-auto rounded-full object-cover"
+                src="assets/images/hotcrm.png"
+                alt=""
+              />
+            </div>
+            <!-- card desc -->
+            <div class="p-1">
+              <h2 class="text-xl font-semibold">Hotcrm</h2>
+              <p class="pt-3 text-justify">
+                HotCRM one of my project I was work on. Where we make sms
+                compaigns.
+              </p>
+              <div class="text-right pt-3">
+                <a
+                  href="https://www.hotcrm.io/home"
+                  target="_blank"
+                  class="border border-amber-500 py-1 px-2 rounded-sm transition-all hover:bg-amber-500 hover:text-neutral-900"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- education  -->
+    <section id="education" class="pt-20 md:pt-40 relative">
+      <h1 class="text-center text-4xl relative pb-20">
+        <!-- line (abolutely) -->
+        <span class="absolute bottom-1/2 left-1/2 h-1 bg-amber-500 w-50"></span>
+        Education
+      </h1>
+      <ul
+        class="bg-amber-500 text-neutral-800 px-10 py-15 md:px-30 flex justify-between font-semibold"
+      >
+        <li>BS Computer Science</li>
+        <li>UST Bannu, Pakistan</li>
+        <li>Passing Year - 2021</li>
+      </ul>
+    </section>
+
+    <!-- hobbies  -->
+    <section id="hobbies" class="pt-20 px-10 md:px-30 md:pt-40">
+      <!-- section title  -->
+      <h1 class="text-center text-4xl relative">
+        <!-- line (abolutely) -->
+        <span class="absolute -bottom-4 left-1/2 h-1 bg-amber-500 w-50"></span>
+        What i like most in sphere time
+      </h1>
+      <!-- card hobbies  -->
+      <div class="pt-10 flex flex-col gap-2 sm:flex-row">
+        <!-- khel card  -->
+        <div class="flex p-2 flex-nowrap g-2 items-center">
+          <div class="w-20">
+            <div
+              class="rounded-full w-15 h-15 bg-amber-500 flex items-center justify-center"
+            >
+              <img src="assets/images/football-con.png" class="w-10" alt="" />
+            </div>
+          </div>
+          <div class="flex-1">Football</div>
+        </div>
+        <!-- book card  -->
+        <div class="flex p-2 flex-nowrap g-2 items-center">
+          <div class="w-20">
+            <div
+              class="rounded-full w-15 h-15 bg-amber-500 flex items-center justify-center"
+            >
+              <img src="assets/images/book.png" class="w-10" alt="" />
+            </div>
+          </div>
+          <div class="flex-1">Book Reading</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer" class="pt-20 md:pt-40 text-center">
+      <div class="py-4 px-10 md:px-30 bg-neutral-800">
+        <h5 class="text-2xl">Catche me</h5>
+        <ul class="pt-4 text-center flex justify-center gap-2">
+          <!-- linkedin  -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sahibzada-ali-web-developer/"
+              target="_blank"
+            >
+              <img
+                src="assets/images/linkedin.png"
+                class="w-7 h-7"
+                alt="linkedin"
+              />
+            </a>
+          </li>
+          <!-- github  -->
+          <li>
+            <a href="https://github.com/issarali538" target="_blank">
+              <img
+                src="assets/images/github.png"
+                class="w-7 h-7"
+                alt="github"
+              />
+            </a>
+          </li>
+          <!-- quora  -->
+          <li>
+            <a
+              href="https://www.quora.com/profile/Sahibzada-Issar-Ali"
+              target="_blank"
+            >
+              <img
+                src="assets/images/quora.png"
+                class="w-7 h-7"
+                alt="linkedin"
+              />
+            </a>
+          </li>
+          <!-- fiverr  -->
+          <li>
+            <a
+              href="https://www.fiverr.com/users/issarali11202/seller_dashboard"
+              target="_blank"
+            >
+              <img
+                src="assets/images/fiverr-logo.jpg"
+                class="w-7 h-7 object-cover"
+                alt="linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- js  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
